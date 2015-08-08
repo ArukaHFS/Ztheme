@@ -1,0 +1,29 @@
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script src="fabric.js"></script>
+</head>
+<body>
+<canvas id="Canvas" width="960" height="540">
+<img src="media\element1.png" id="element1">
+<img src="media\Background.png" id="Background">
+</canvas>
+<script>
+var canvas = new fabric.Canvas('Canvas');
+var imgElement0 = document.getElementById('Background');
+var imgInstance0 = new fabric.Image(imgElement0, {
+    width:960,
+    height:540
+});
+canvas.add(imgInstance0);
+var imgElement1 = document.getElementById('element1');
+var imgInstance1 = new fabric.Image(imgElement1, {
+    left:100,
+    top:100,
+    angle: 30
+});
+canvas.add(imgInstance1);
+</script>
+</body></html>
+
+
